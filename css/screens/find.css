@@ -1,0 +1,78 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+.find-icons__icon i {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.find-screen__subtitle {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.find-screen__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+
+.find-screen__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.find-screen__column h2 {
+  font-size: 16px;
+  color: black;
+}
+
+.find-screen__hashtag {
+  text-transform: uppercase;
+}
+.find-screen__chatroom {
+  display: flex;
+  align-items: center;
+}
+.find-screen__chatroom span {
+  padding-left: 5px;
+}
+
+.find-screen__row--pic-xs {
+  height: 20px;
+  width: 20px;
+  border-radius: 40%;
+}
+
+.find-screen__active {
+  color: hotpink;
+}
+
+.find-screen__row--pic-lg {
+  height: 90px;
+  width: 90px;
+  border-radius: 10%;
+}
+
+.find-screen__favorite {
+  right: 5px;
+  bottom: 10px;
+}
+
+.find-screen__favorite i {
+  padding-right: 3px;
+  font-size: 12px;
+}

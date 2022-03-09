@@ -1,0 +1,13 @@
+.common-screen__border {
+  border-top: var(--border-default);
+  color: var(--grey);
+  margin-top: 10px;
+}
+.common-screen__row {
+  padding: 10px 0 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}

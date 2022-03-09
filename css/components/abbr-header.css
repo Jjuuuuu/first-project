@@ -1,0 +1,30 @@
+.abbr-header__column {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.abbr-header__title {
+  font-size: 20px;
+}
+
+.abbr-header__column {
+  width: 33%;
+}
+
+.abbr-header__column:first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+.abbr-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.abbr-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.abbr-header__column:last-child i {
+  margin-left: 10px;
+}
