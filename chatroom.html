@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room - Kokoa Clone Talk</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <!-- Battery Icon -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <div class="abbr-header__column">
+        <span><i class="fas fa-chevron-left fa-lg"></i></span>
+      </div>
+      <div class="abbr-header__column">
+        <h1 class="screen-header__title abbr-header__title">Jjuu</h1>
+      </div>
+      <div class="abbr-header__column">
+        <div>
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="chatroom-main">
+      <div class="chatroom-screen">
+        <div class="chatroom__timestamp">
+          <span class="chatroom__date">Tuesday, June 30, 2022</span>
+        </div>
+        <div class="chatroom__row">
+          <img
+            src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/Jjuuuuu-avatar.jpg"
+            class="user-component__avatar--xs chatroom__avatar"
+          />
+          <div class="chatroom__column">
+            <span class="chatroom__username">Jjuu</span>
+            <div class="chatroom__message-bubble">
+              <div class="chatroom__message">Hi!</div>
+              <span class="chatroom__time">21:27</span>
+            </div>
+          </div>
+        </div>
+        <div class="chatroom__row chatroom__row--received">
+          <div class="chatroom__column">
+            <span class="chatroom__username"></span>
+            <div class="chatroom__message-bubble">
+              <span class="chatroom__time">21:27</span>
+              <div class="chatroom__message chatroom__message--received">
+                Hi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                neque corrupti, quas sit omnis, qui rem ratione voluptatem
+                fugiat atque quasi debitis magni quia eveniet nostrum ab
+                pariatur sint dolor?
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chatroom__row">
+          <img
+            src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/Jjuuuuu-avatar.jpg"
+            class="user-component__avatar--xs chatroom__avatar"
+          />
+          <div class="chatroom__column">
+            <span class="chatroom__username">Jjuu</span>
+            <div class="chatroom__message-bubble">
+              <div class="chatroom__messages">
+                <div class="chatroom__message">Hi!</div>
+                <div class="chatroom__message">Message Deleted</div>
+                <div class="chatroom__message">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem quae eius nulla ipsa, hic ea quod, eos tempore eligendi
+                  perspiciatis facere deleniti sequi assumenda veritatis,
+                  officiis officia. Nesciunt, consequatur hic?
+                </div>
+              </div>
+              <span class="chatroom__time">21:28</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="write-message">
+      <span class="write-message__more">
+        <i class="fas fa-plus-circle"></i>
+      </span>
+      <div class="write-message__box">
+        <input class="write-message__input" required />
+        <div class="write-message__input-icons">
+          <span class="write-message__emoticon">
+            <i class="fas fa-smile"></i>
+          </span>
+          <span class="write-message__send">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__update badge-small"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

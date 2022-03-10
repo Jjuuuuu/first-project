@@ -1,0 +1,96 @@
+body {
+  background-color: bisque;
+}
+.chatroom-main {
+  position: relative;
+  height: calc(100vh - 200px);
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.chatroom__timestamp {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatroom__date {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.chatroom-screen {
+  padding: 0 10px;
+  max-height: 100%;
+  overflow: auto;
+  /* parent에 position: relative; exact height 입력
+    child에 max-height: 100%; overflow: auto; 넣어주면 
+    child 안의 컨텐츠는 scrollable이 된다 */
+}
+.chatroom__row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.chatroom__avatar {
+  border-radius: 35%;
+  size: 250px;
+  margin-right: 5px;
+}
+.chatroom__row--received {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.chatroom__column {
+  display: flex;
+  flex-direction: column;
+  color: var(--grey);
+  position: relative;
+}
+.chatroom__username {
+  font-size: 16px;
+  display: flex;
+}
+
+.chatroom__message-bubble {
+  display: flex;
+  flex-direction: row;
+}
+.chatroom__messages {
+  display: flex;
+  flex-direction: column;
+}
+.chatroom__message {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 50vw;
+  margin-top: 5px;
+  background-color: white;
+  padding: 15px 15px;
+  color: black;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.chatroom__message--received {
+  display: inline-flex;
+  max-width: 50vw;
+  margin-top: 5px;
+  background-color: rgba(95, 158, 160, 0.534);
+  padding: 10px 15px;
+  color: black;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.chatroom__time {
+  display: flex;
+  align-items: flex-end;
+  font-size: 10px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+}

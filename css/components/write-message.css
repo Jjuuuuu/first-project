@@ -1,0 +1,46 @@
+.write-message {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 73px;
+  padding: 5px 10px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.write-message span {
+  font-size: 30px;
+  color: var(--grey);
+}
+.write-message__send i {
+  color: white;
+}
+.write-message__box {
+  width: 80vw;
+  background-color: saddlebrown;
+  border: 1px solid sandybrown;
+  padding: 5px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.write-message__input {
+  width: 70%;
+  background: transparent;
+  border: none;
+  padding: 0 3px;
+  color: antiquewhite;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.write-message__input-icons {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.write-message__input-icons span {
+  margin-left: 5px;
+}
