@@ -1,3 +1,8 @@
+#index-body {
+  overflow: hidden;
+  height: 100%;
+}
+
 .welcome-header {
   margin: 90px 0;
   text-align: center;
@@ -8,25 +13,29 @@
 }
 
 .welcome-header__title {
+  color: var(--sub-color);
+  background-color: var(--main-color);
+  padding: 5px 10px;
   margin-bottom: 40px;
   font-size: 25px;
 }
 
 .welcome-header__text {
   width: 60%;
-  opacity: 0.5;
+  color: black;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   margin: 0 30px;
+  height: calc(100vh - 180px);
 }
 
 .login-form a {
   text-align: center;
   text-decoration: none;
-  color: rgb(0, 0, 0, 0.8);
+  color: black;
   margin-top: 5px;
 }
 
@@ -43,7 +52,7 @@
 }
 
 .login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  border-bottom: 1px solid black;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -53,7 +62,11 @@
 }
 
 .login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--main-color);
+}
+
+.login-form input:focus::placeholder {
+  opacity: 0;
 }
 
 .login-form .login-form__id {
@@ -61,7 +74,12 @@
 }
 
 .login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background: rgb(255, 229, 240);
+  background: linear-gradient(
+    221deg,
+    rgba(255, 229, 240, 1) 0%,
+    rgba(0, 95, 255, 1) 100%
+  );
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 15px;

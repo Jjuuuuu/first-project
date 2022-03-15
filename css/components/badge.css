@@ -1,18 +1,29 @@
 .badge {
-  background-color: tomato;
-  width: 25px;
-  height: 25px;
+  background-color: var(--color-shade);
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   /* text attributes */
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: black;
   font-weight: 600;
+}
+.badge-number {
+  background-color: var(--color-shade);
+  border-radius: 40px;
+  padding: 3px 7px;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+.badge-number--none {
+  opacity: 0;
 }
 
 .badge-small {
-  background-color: tomato;
+  background-color: var(--color-shade);
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -35,7 +46,7 @@
 }
 
 .badge-exclamation {
-  color: tomato;
+  color: var(--color-shade);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +54,7 @@
 }
 
 .badge-new {
-  background-color: tomato;
+  background-color: var(--color-shade);
   width: 10px;
   height: 10px;
   padding: 3px 3px;
@@ -55,5 +66,4 @@
   color: aliceblue;
   font-weight: 600;
   font-size: 7px;
-  font-stretch: condensed;
 }

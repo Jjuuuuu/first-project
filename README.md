@@ -39,6 +39,9 @@
 
     website bookmarked:
 
+    CSS Easing Animation
+    https://matthewlein.com/tools/ceaser/
+
     svg icons
     https://heroicons.com/
     https://fontawesome.com/

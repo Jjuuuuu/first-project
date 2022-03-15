@@ -1,3 +1,9 @@
+#settings-main {
+  position: relative;
+  height: calc(100vh - 140px);
+  overflow: auto;
+}
+
 .settings-list__column {
   display: flex;
   flex-direction: column;
@@ -19,8 +25,21 @@
 .settings__row-title {
   display: inline-flex;
 }
+
 .settings__row-title span {
   padding-right: 15px;
+  cursor: pointer;
+}
+
+.settings__row i {
+  transition: color filter 0.2s ease-in-out;
+}
+
+.settings__row-title:hover span {
+  transform: translateY(1px);
+}
+.settings__row-title:hover i {
+  color: var(--main-color);
 }
 
 .settings__border {

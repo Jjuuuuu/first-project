@@ -3,44 +3,98 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
   position: fixed;
   bottom: 0;
-  margin-bottom: 73px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   width: 100vw;
   box-sizing: border-box;
+  z-index: 10;
+  transition: transform 0.1s linear;
 }
-.write-message span {
+
+.write-message i {
   font-size: 30px;
   color: var(--grey);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
-.write-message__send i {
-  color: white;
+.write-message__more {
+  margin-right: 10px;
 }
+
 .write-message__box {
   width: 80vw;
-  background-color: saddlebrown;
-  border: 1px solid sandybrown;
+  background: rgb(255, 229, 240);
+  background: linear-gradient(
+    221deg,
+    rgba(255, 229, 240, 0.5) 0%,
+    rgba(0, 95, 255, 0.6) 100%
+  );
+  border: 1px solid #91ced2;
   padding: 5px;
   border-radius: 30px;
   display: flex;
-  justify-content: space-between;
+  transition: width, background-color, transform 0.4s ease-in-out;
 }
 
 .write-message__input {
-  width: 70%;
+  width: 100%;
   background: transparent;
   border: none;
   padding: 0 3px;
-  color: antiquewhite;
+  color: black;
   font-size: 16px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
+
 .write-message__input-icons {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
+  opacity: 0;
 }
-.write-message__input-icons span {
-  margin-left: 5px;
+.write-message__send {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.write-message__more:hover i,
+.write-message__send:hover i,
+.write-message__emoticon:hover i {
+  color: black;
+  transform: translateY(1px);
+}
+
+.write-message__input-icons button:focus,
+.write-message__input-icons button:active {
+  outline: none;
+}
+
+.write-message:focus-within .write-message__more {
+  opacity: 0;
+  display: none;
+}
+
+.write-message:focus-within .write-message__box,
+.write-message:focus-within .write-message__input {
+  width: 90vw;
+}
+
+.write-message:focus-within {
+  transform: translateY(55px);
+}
+
+.write-message:focus-within .write-message__box {
+  transform: translateY(-55px);
+  background: var(--sub-color);
+  border-color: var(--sub-color);
+}
+.write-message:focus-within .write-message__input-icons {
+  opacity: 1;
 }

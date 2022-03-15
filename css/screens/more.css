@@ -21,6 +21,11 @@
   justify-content: space-between;
 }
 
+.more-icons__column a:hover i {
+  color: var(--main-color);
+  opacity: 0.9;
+}
+
 .more-icons__column a {
   display: flex;
   flex-direction: column;
@@ -34,10 +39,10 @@
 }
 .more-icons__link i {
   padding-bottom: 10px;
+  transition: color 0.2s linear;
 }
 .more-icons__link span {
   font-size: 14px;
-  color: rgb(0, 0, 0, 0.7);
 }
 .more-icons__link .badge-small {
   right: 10px;
@@ -47,6 +52,10 @@
 .more-suggestions__row {
   color: black;
   padding: 20px 0;
+}
+
+.more-suggestions__row h6 {
+  font-family: "Racing Sans One", cursive;
 }
 
 .more-suggestions__app {
@@ -59,11 +68,14 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 5vw;
+  cursor: pointer;
 }
 .more-suggestions__column img {
   width: 50px;
   height: 50px;
   border-radius: 15%;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 .more-suggestions__column span {
   font-size: 14px;

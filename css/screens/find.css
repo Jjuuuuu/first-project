@@ -10,15 +10,24 @@
   align-items: center;
   width: 20%;
   text-align: center;
+  cursor: pointer;
 }
 
 .find-icons__icon i {
   font-size: 30px;
   padding-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
 }
-
+.find-icons__icon:hover i {
+  transform: translateY(1px);
+}
+.find-screen__title {
+  font-family: "Racing Sans One", cursive;
+  color: black;
+}
 .find-screen__subtitle {
-  color: rgb(0, 0, 0, 0.3);
+  color: var(--main-color);
+  cursor: pointer;
 }
 
 .find-screen__contents {
@@ -26,6 +35,17 @@
   justify-content: center;
   align-items: center;
   height: 10em;
+}
+
+.find-screen__contents span {
+  background: rgb(255, 229, 240);
+  background: linear-gradient(
+    221deg,
+    rgba(255, 229, 240, 0.6) 0%,
+    rgba(0, 95, 255, 0.6) 100%
+  );
+  padding: 5px 10px;
+  border-radius: 40px;
 }
 
 .find-screen__column {
@@ -52,16 +72,20 @@
 }
 
 .find-screen__row--pic-xs {
+  object-fit: cover;
+  object-position: 100% 0;
   height: 20px;
   width: 20px;
   border-radius: 40%;
 }
 
 .find-screen__active {
-  color: hotpink;
+  color: var(--color-shade);
 }
 
 .find-screen__row--pic-lg {
+  object-fit: cover;
+  object-position: 100% 0;
   height: 90px;
   width: 90px;
   border-radius: 10%;
@@ -71,8 +95,16 @@
   right: 5px;
   bottom: 10px;
 }
-
+.find-screen__column,
+.find-screen__row--pic-lg,
+.find-screen__favorite {
+  cursor: pointer;
+}
 .find-screen__favorite i {
   padding-right: 3px;
   font-size: 12px;
+  transition: color 0.3s ease-in-out;
+}
+.find-screen__favorite:hover i {
+  color: tomato;
 }

@@ -1,8 +1,3 @@
-.abbr-header__column {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
 .abbr-header__title {
   font-size: 20px;
 }
@@ -12,19 +7,21 @@
 }
 
 .abbr-header__column:first-child {
-  display: flex;
-  justify-content: flex-start;
+  margin-right: auto;
 }
 .abbr-header__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .abbr-header__column:last-child {
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .abbr-header__column:last-child i {
   margin-left: 10px;
+}
+.abbr-header__column i:hover {
+  cursor: pointer;
+  color: var(--main-color);
 }

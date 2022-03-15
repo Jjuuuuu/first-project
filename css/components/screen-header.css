@@ -3,11 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px var(--horizontal-space) 15px;
+  background: rgb(255, 229, 240);
+  background: linear-gradient(
+    221deg,
+    rgba(255, 229, 240, 1) 0%,
+    rgba(0, 95, 255, 1) 100%
+  );
 }
-
 .screen-header__title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Racing Sans One", cursive;
+  text-transform: uppercase;
 }
 
 .screen-header__icons {
@@ -15,10 +22,22 @@
 }
 
 .screen-header__icons span {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .screen-header__update {
   top: -10px;
   right: -5px;
+}
+
+.screen-header__icons:hover {
+  cursor: pointer;
+}
+
+.screen-header__icons i:hover {
+  color: var(--main-color);
+}
+
+.screen-header__icons i {
+  transition: color 0.2s ease-in-out;
 }

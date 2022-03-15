@@ -1,7 +1,12 @@
 :root {
   --yellow: #fae100;
   --grey: rgba(0, 0, 0, 0.45);
-  --light-grey: rgb(0, 0, 0, 0.1);
+  --main-color: #005fff;
+  --sub-color: rgba(255, 229, 240, 1);
+  --color-shade: #7da1f8;
+  --light-blue: rgba(148, 228, 233, 1);
+  --sheer-light-grey: rgba(0, 0, 0, 0.1);
   --horizontal-space: 25px;
-  --border-default: 1px solid var(--light-grey);
+  --border-default: 3px solid black;
+  --gradient: rgba(255, 229, 240);
 }

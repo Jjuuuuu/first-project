@@ -32,7 +32,9 @@
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <a href="settings.html">
+          <span><i class="fas fa-cog fa-lg"></i></span>
+        </a>
       </div>
     </header>
 
@@ -41,7 +43,9 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/dingco-1624528889.jpg"
+              src="
+              https://i.pinimg.com/564x/0e/c6/5d/0ec65df8d1461c57c9e1f270de106e82.jpg
+              "
               class="user-component__avatar user-component__avatar"
             />
             <div class="user-component__text">
@@ -53,10 +57,23 @@
           </div>
           <div class="user-component__column">
             <span class="user-component__time">21:22</span>
-            <div class="badge">1</div>
+            <span class="badge-number">123</span>
           </div>
         </div>
       </a>
+      <div class="user-component">
+        <div class="user-component__column">
+          <div class="user-component__avatar user-component__avatar"></div>
+          <div class="user-component__text">
+            <h4 class="user-component__title">Martin</h4>
+            <h6 class="user-component__subtitle">Bye~</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:00</span>
+          <span class="badge-number badge-number--none">1</span>
+        </div>
+      </div>
     </main>
 
     <nav class="nav">
@@ -72,7 +89,7 @@
             <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
-        <li>
+        <li class="nav__btn">
           <a class="nav__link" href="find.html">
             <i class="fas fa-search fa-2x"></i>
           </a>
@@ -85,7 +102,18 @@
         </li>
       </ul>
     </nav>
-
+    <div id="no-mobile">
+      <span>
+        <i class="fas fa-exclamation-triangle"></i>
+        Your screen is too big
+      </span>
+    </div>
+    <div id="too-small">
+      <span> Your screen is too small! </span>
+      <img
+        src="https://www.pinclipart.com/picdir/big/3-36993_running-man-stick-figure-push-clipart-png-download.png"
+      />
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

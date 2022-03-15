@@ -8,7 +8,7 @@
     <title>Chat Room - Kokoa Clone Talk</title>
   </head>
 
-  <body>
+  <body id="chatroom-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -28,7 +28,9 @@
 
     <header class="screen-header">
       <div class="abbr-header__column">
-        <span><i class="fas fa-chevron-left fa-lg"></i></span>
+        <a href="chats.html">
+          <span><i class="fas fa-chevron-left fa-lg"></i></span>
+        </a>
       </div>
       <div class="abbr-header__column">
         <h1 class="screen-header__title abbr-header__title">Jjuu</h1>
@@ -46,34 +48,7 @@
         <div class="chatroom__timestamp">
           <span class="chatroom__date">Tuesday, June 30, 2022</span>
         </div>
-        <div class="chatroom__row">
-          <img
-            src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/Jjuuuuu-avatar.jpg"
-            class="user-component__avatar--xs chatroom__avatar"
-          />
-          <div class="chatroom__column">
-            <span class="chatroom__username">Jjuu</span>
-            <div class="chatroom__message-bubble">
-              <div class="chatroom__message">Hi!</div>
-              <span class="chatroom__time">21:27</span>
-            </div>
-          </div>
-        </div>
         <div class="chatroom__row chatroom__row--received">
-          <div class="chatroom__column">
-            <span class="chatroom__username"></span>
-            <div class="chatroom__message-bubble">
-              <span class="chatroom__time">21:27</span>
-              <div class="chatroom__message chatroom__message--received">
-                Hi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
-                neque corrupti, quas sit omnis, qui rem ratione voluptatem
-                fugiat atque quasi debitis magni quia eveniet nostrum ab
-                pariatur sint dolor?
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="chatroom__row">
           <img
             src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/Jjuuuuu-avatar.jpg"
             class="user-component__avatar--xs chatroom__avatar"
@@ -82,13 +57,59 @@
             <span class="chatroom__username">Jjuu</span>
             <div class="chatroom__message-bubble">
               <div class="chatroom__messages">
-                <div class="chatroom__message">Hi!</div>
-                <div class="chatroom__message">Message Deleted</div>
-                <div class="chatroom__message">
+                <div class="chatroom__message chatroom__message--received">
+                  Hi!
+                </div>
+              </div>
+              <span class="chatroom__time">21:27</span>
+            </div>
+          </div>
+        </div>
+        <div class="chatroom__row chatroom__row--sent">
+          <div class="chatroom__column">
+            <span class="chatroom__username"></span>
+            <div class="chatroom__message-bubble">
+              <div class="chatroom__messages">
+                <div class="chatroom__message chatroom__message--sent">
+                  Hi! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ut neque corrupti, quas sit omnis, qui rem ratione voluptatem
+                  fugiat atque quasi debitis magni quia eveniet nostrum ab
+                  pariatur sint dolor?
+                </div>
+              </div>
+              <span class="chatroom__time">21:27</span>
+            </div>
+          </div>
+        </div>
+        <div class="chatroom__row chatroom__row--received">
+          <img
+            src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/Jjuuuuu-avatar.jpg"
+            class="user-component__avatar--xs chatroom__avatar"
+          />
+          <div class="chatroom__column">
+            <span class="chatroom__username">Jjuu</span>
+            <div class="chatroom__message-bubble">
+              <div class="chatroom__messages">
+                <div class="chatroom__message chatroom__message--received">
+                  Sure.
+                </div>
+                <div
+                  class="chatroom__message chatroom__message--received chatroom__message--deleted"
+                >
+                  Message Deleted
+                </div>
+                <div class="chatroom__message chatroom__message--received">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quidem quae eius nulla ipsa, hic ea quod, eos tempore eligendi
                   perspiciatis facere deleniti sequi assumenda veritatis,
                   officiis officia. Nesciunt, consequatur hic?
+                </div>
+                <div class="chatroom__message chatroom__message--received">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Iusto, mollitia dolorem. Numquam earum consequuntur
+                  reprehenderit? A temporibus aliquam ipsa assumenda corrupti!
+                  Perferendis quaerat inventore sequi quis provident vel earum
+                  illo!
                 </div>
               </div>
               <span class="chatroom__time">21:28</span>
@@ -98,7 +119,7 @@
       </div>
     </main>
 
-    <div class="write-message">
+    <form class="write-message">
       <span class="write-message__more">
         <i class="fas fa-plus-circle"></i>
       </span>
@@ -108,40 +129,24 @@
           <span class="write-message__emoticon">
             <i class="fas fa-smile"></i>
           </span>
-          <span class="write-message__send">
+          <button class="write-message__send">
             <i class="fas fa-arrow-alt-circle-up"></i>
-          </span>
+          </button>
         </div>
       </div>
+    </form>
+    <div id="no-mobile">
+      <span>
+        <i class="fas fa-exclamation-triangle"></i>
+        Your screen is too big
+      </span>
     </div>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li>
-          <a class="nav__link" href="find.html">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__update badge-small"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
+    <div id="too-small">
+      <span> Your screen is too small! </span>
+      <img
+        src="https://www.pinclipart.com/picdir/big/3-36993_running-man-stick-figure-push-clipart-png-download.png"
+      />
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
